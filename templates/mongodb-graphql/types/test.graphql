@@ -1,0 +1,11 @@
+type Test {
+  text: String
+}
+
+type Mutation {
+  addTest(text: String): Test
+}
+
+type Query {
+  getTests(name: String): [Test]
+}
